@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+<h1> Rare Disease Diagnosis </h1>
+<form action="/" method="POST" id="dis_form">
+    <h2> Input <h2> 
+    <textarea name="content" id="content"></textarea>
+    <input type="submit" id='submit' value="Submit">
+</form>
+<img src="../static/loading.gif" alt="Loading..." id = "loading" />
+<p id="output">{{ output }}</p>
+{% endblock %}
+
